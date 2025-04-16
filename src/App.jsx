@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home/Home'
 import Login from './pages/Login/Login'
-import Register from './pager/Register/Register'
+import Register from './pages/Register/Register'
 import './App.css'
 function App() {
 
@@ -11,12 +11,12 @@ function App() {
     <>
       <div>
         <BrowserRouter>
-          <NavBar />
+          <Navbar />
           <div className="container">
             <Routes>
-              <Route path="/" elemnte={<Home />} />
-              <Route path="/login" elemnte={<Login />} />
-              <Route path="/register" elemnte={<Register />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
             </Routes>
           </div>
           <Footer />
