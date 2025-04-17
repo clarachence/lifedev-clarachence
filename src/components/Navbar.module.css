@@ -1,38 +1,63 @@
 .navbar {
     display: flex;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 10px 0px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em 2em;
+    padding: 1rem 2rem;
+    background-color: #edf3f6;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .brand {
-    font-size: 1.2em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+
   }
   
   .brand span {
-    font-weight: 900;
-    text-transform: uppercase;
+    color: #0077ff
   }
   
-  .links_list {
+  .link_list {
     display: flex;
     list-style: none;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .link{
+    color:black;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 2px;
+    transition: color 0.3s, border-bottom 0.3s;
   }
   
-  .links_list li {
-    margin-right: 1em;
+  .link:hover{
+    color: #0077ff;
+    border-bottom: 2px solid #0077ff;
   }
-  
-  .links_list li a {
-    padding: 0.4em 0.6em;
-  }
+
   
   .active {
-    background-color: #000;
-    color: #fff;
+    border-bottom: 2px solid #0077ff;
+    color: #0077ff;
   }
   .exit{
-    border: none;
+    border: 1.5px solid #ff4d4d;
     background-color: transparent;
+    color: #ff4d4d;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .exit:hover{
+    background-color: #ff4d4d;
+    color: white;
   }
